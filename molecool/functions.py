@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 
 from mpl_toolkits.mplot3d import Axes3D
 
-%matplotlib notebook
+#Matplotlib notebook
 
 def calculate_distance(rA, rB):
     # This function calculates the distance between two points given as numpy arrays.
@@ -117,7 +117,7 @@ def draw_molecule(coordinates, symbols, draw_bonds=None, save_location=None, dpi
             ax.plot(coordinates[[atom1,atom2], 0], coordinates[[atom1,atom2], 1],
                     coordinates[[atom1,atom2], 2], color='k')
     
-    # Save figure
+    # Save figure 
     if save_location:
         plt.savefig(save_location, dpi=dpi, graph_min=0, graph_max=2)
     
