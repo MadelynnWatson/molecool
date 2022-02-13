@@ -6,6 +6,26 @@ This module is for functions that calculate messurements
 import numpy as np
 
 def calculate_distance(rA, rB):
+    """
+    Function calculates the distance between 2 points.
+
+    Parameters
+    ----------
+    rA,rB : np.array
+        The coordinate of each point
+
+    Returns
+    -------
+    dist : float
+        The distance between the 2 points.
+
+    Examples
+    --------
+    >>> r1 = np.array([0,0,0])
+    >>> r2 = np.array([0,1,0])
+    >>> calculate_distance(r1,r2)
+    1.0
+    """
     # This function calculates the distance between two points given as numpy arrays.
     d=(rA-rB)
     dist=np.linalg.norm(d)
